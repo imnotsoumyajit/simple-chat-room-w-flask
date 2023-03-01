@@ -17,4 +17,11 @@
   </div>
   <button type="submit" name="create" class="create-btn">create a room</button>
 </form>
+{% if error %}
+<ul>
+  <li>
+    {{error}}
+  </li>
+</ul>
+{% endif %}
 {% endblock %}
